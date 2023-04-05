@@ -20,17 +20,17 @@ layout: default
                     <div class="component__logos">
                         {% if component.storybook %}
                             <a href="{{ component.storybook }}" target="_blank">
-                                <img src="{{ site.url }}/assets/images/storybook.png" class="component__logo" />
+                                <img src="{{ site.baseurl }}/assets/images/storybook.png" class="component__logo" />
                             </a>
                         {% endif %}
                         {% if component.github %}
                             <a href="{{ component.github }}" target="_blank">
-                                <img src="{{ site.url }}/assets/images/github.png" class="component__logo" />
+                                <img src="{{ site.baseurl }}/assets/images/github.png" class="component__logo" />
                             </a>
                         {% endif %}
                         {% if component.npm  %}
                             <a href="{{ component.npm }}" target="_blank">
-                                <img src="{{ site.url }}/assets/images/npm.png" class="component__logo" />
+                                <img src="{{ site.baseurl }}/assets/images/npm.png" class="component__logo" />
                             </a>
                         {% endif %}
                     </div>
