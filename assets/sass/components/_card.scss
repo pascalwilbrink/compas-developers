@@ -1,0 +1,17 @@
+.card {
+    border-radius: 5px;
+    background: #FFFFFF;
+
+    &__header {
+        padding: 16px;
+        font-size: 1.6em;
+    }
+
+    &__content {
+        padding: 16px;
+    }
+    
+    &__actions {
+        padding: 16px;
+    }
+}
