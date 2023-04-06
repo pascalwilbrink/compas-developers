@@ -10,6 +10,8 @@ layout: default
             <div class="card">
                 <div class="card__header">
                     <a href="{{ guide.url | relative_url }}">{{ guide.name }}</a>
+                </div>
+                <div class="card__content">
                     {{ guide.summary }}
                 </div>
             </div>
