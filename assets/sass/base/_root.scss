@@ -45,6 +45,15 @@ aside {
   overflow: auto;
 }
 
+.main:has(aside) {
+  display: flex;
+  gap: 32px;
+}
+
+.main aside {
+  width: 320px;
+}
+
 .plugins {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

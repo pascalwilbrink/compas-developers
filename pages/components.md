@@ -17,23 +17,25 @@ layout: default
                     </a>
                 </div>
                 <div class="card__actions">
-                    <div class="component__logos">
-                        {% if component.storybook %}
-                            <a href="{{ component.storybook }}" target="_blank">
-                                <img src="{{ site.baseurl }}/assets/images/storybook.png" class="component__logo" />
-                            </a>
-                        {% endif %}
-                        {% if component.github %}
-                            <a href="{{ component.github }}" target="_blank">
-                                <img src="{{ site.baseurl }}/assets/images/github.png" class="component__logo" />
-                            </a>
-                        {% endif %}
-                        {% if component.npm  %}
-                            <a href="{{ component.npm }}" target="_blank">
-                                <img src="{{ site.baseurl }}/assets/images/npm.png" class="component__logo" />
-                            </a>
-                        {% endif %}
-                    </div>
+                    {% if component.urls %}
+                        <div class="component__logos">
+                            {% if component.urls.storybook %}
+                                <a href="{{ component.urls.storybook }}" target="_blank">
+                                    <img src="{{ site.baseurl }}/assets/images/storybook.png" class="component__logo" />
+                                </a>
+                            {% endif %}
+                            {% if component.urls.github %}
+                                <a href="{{ component.urls.github }}" target="_blank">
+                                    <img src="{{ site.baseurl }}/assets/images/github.png" class="component__logo" />
+                                </a>
+                            {% endif %}
+                            {% if component.urls.npm  %}
+                                <a href="{{ component.urls.npm }}" target="_blank">
+                                    <img src="{{ site.baseurl }}/assets/images/npm.png" class="component__logo" />
+                                </a>
+                            {% endif %}
+                        </div>
+                    {% endif %}
                 </div>
             </div>
         </div>
