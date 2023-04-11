@@ -8,30 +8,30 @@ layout: default
     {% for component in site.components %}
         <div class="components_component">
             <div class="card">
-                <div class="card__header">
-                    {{ component.name }}
-                </div>
-                <div class="card__content">
+                <div class="card__image" title="{{ component.name }}">
                     <a href="{{ component.url | relative_url }}">
-                        Card content
+                        <img src="{{ component.image | relative_url }}" />
                     </a>
                 </div>
                 <div class="card__actions">
+                    <h4>
+                        {{ component.name }}
+                    </h4>
                     {% if component.urls %}
                         <div class="component__logos">
                             {% if component.urls.storybook %}
-                                <a href="{{ component.urls.storybook }}" target="_blank">
-                                    <img src="{{ site.baseurl }}/assets/images/storybook.png" class="component__logo" />
+                                <a href="{{ component.urls.storybook }}" target="_blank" title="Storybook">
+                                    <img src="{{ 'assets/images/storybook.png' | relative_url }}" class="component__logo" />
                                 </a>
                             {% endif %}
                             {% if component.urls.github %}
-                                <a href="{{ component.urls.github }}" target="_blank">
-                                    <img src="{{ site.baseurl }}/assets/images/github.png" class="component__logo" />
+                                <a href="{{ component.urls.github }}" target="_blank" title="GitHub">
+                                    <img src="{{ 'assets/images/github.png' | relative_url }}" class="component__logo" />
                                 </a>
                             {% endif %}
                             {% if component.urls.npm  %}
-                                <a href="{{ component.urls.npm }}" target="_blank">
-                                    <img src="{{ site.baseurl }}/assets/images/npm.png" class="component__logo" />
+                                <a href="{{ component.urls.npm }}" target="_blank" title="Npm">
+                                    <img src="{{ 'assets/images/npm.png' | relative_url }}" class="component__logo" />
                                 </a>
                             {% endif %}
                         </div>
